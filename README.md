@@ -19,3 +19,8 @@ Having a job permutation {*J<sub>1</sub>, J<sub>2</sub>, ..., J<sub>n</sub>*}, a
 
 *C(J<sub>i</sub>, 1)* = *C(J<sub>i-1</sub>, 1) + p(J<sub>i</sub>, 1)* for *i=2, ..., n*
 
+*C(J<sub>1</sub>, j)* = *C(J<sub>1</sub>, j-1) + p(J<sub>1</sub>, j)* for *j=2, ..., m*
+
+*C(J<sub>i</sub>, j)* = max {*C(J<sub>i-1</sub>, j), C(J<sub>i</sub>, j-1) } + p(J<sub>i</sub>, j)* for *i=2, ..., n*; *j=2, ..., m*
+
+*C<sub>max</sub>* = *C(J<sub>n</sub>, m)*
