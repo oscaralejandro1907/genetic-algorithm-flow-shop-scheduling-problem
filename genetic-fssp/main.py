@@ -14,7 +14,6 @@ if __name__ == '__main__':
         filename = 'VFR10_3_1_Gap.txt'
 
     data = Instance(filename)
-    gen_flow_shop = Solver(data, n_pop=3, pc=1.0, pm=1.0, stop=50)
-    x=3
+    gen_flow_shop = Solver(data, n_pop=5, pc=1.0, pm=1.0, stop=50)
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
